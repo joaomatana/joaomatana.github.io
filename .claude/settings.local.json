@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"html: %{http_code}\\\\n\" http://localhost:8765/html/index.html)",
+      "Bash(curl -s -o /dev/null -w \"css: %{http_code}\\\\n\" http://localhost:8765/assets/css/styles.css)",
+      "Bash(curl -s -o /dev/null -w \"js:  %{http_code}\\\\n\" http://localhost:8765/assets/js/main.js)",
+      "Bash(curl -s http://localhost:8765/html/index.html)"
+    ]
+  }
+}
