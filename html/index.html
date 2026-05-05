@@ -1,503 +1,571 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
-  
-  <title>Portifólio Virtual - João Matana</title>
+  <title>joao_matana.exe — full_stack_engineer</title>
+  <meta name="description" content="Save file de João Pedro Matana — Desenvolvedor Full Stack na Clinicorp. Quest log, achievements e skill tree de uma carreira de 5+ anos em billing, GCP e arquiteturas orientadas a eventos.">
 
   <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/css/themify-icons.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
 
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/animate/animate.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/owl-carousel/owl.carousel.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/nice-select/css/nice-select.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/vendor/fancybox/css/jquery.fancybox.min.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/css/virtual.css">
-  
-  <link rel="stylesheet" type="text/css" href="../assets/css/topbar.virtual.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
+<body>
 
-<body class="theme-red">
-  
-  <!-- Botão voltar para o início -->
-  <div class="btn-back_to_top">
-    <span class="ti-arrow-up"></span>
-  </div>
+  <!-- ================ TOPBAR HUD ================ -->
+  <header class="topbar">
+    <a href="#top" class="topbar__brand">
+      <span class="led" aria-hidden="true"></span>
+      <span class="label">joao_matana.exe</span>
+      <span class="full">&nbsp;·&nbsp;LVL 25 · clinicorp_solutions</span>
+    </a>
+    <div class="topbar__hud" aria-hidden="true">
+      <div class="stat"><span>HP</span><span class="bar bar--hp" style="--fill: 96%"></span><strong>96</strong></div>
+      <div class="stat"><span>MP</span><span class="bar" style="--fill: 84%"></span><strong>84</strong></div>
+      <div class="stat"><span>XP</span><span class="bar bar--xp" style="--fill: 78%"></span><strong>5y</strong></div>
+    </div>
+    <nav class="topbar__nav" aria-label="Main menu">
+      <a href="#sobre">about</a>
+      <a href="#quests">quests</a>
+      <a href="#contato">contact</a>
+    </nav>
+  </header>
 
-  <!-- Botão de Configuração -->
-  <div class="config">
-    <div class="template-config">
-      <!-- Settings -->
-      <div class="d-block">
-        <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
+  <main id="top">
+
+    <!-- ================ HERO / PLAYER PROFILE ================ -->
+    <section class="hero">
+      <div class="wrapper">
+
+        <div class="hero__bootline reveal">
+          <span class="ok">▸</span>
+          <span>BOOTING SAVE_001.dat</span>
+          <span class="dim">·</span>
+          <span class="ok">OK</span>
+          <span class="dim">·</span>
+          <span>LOADING PLAYER_PROFILE</span>
+          <span class="dim">·</span>
+          <span class="typed">READY</span>
+        </div>
+
+        <div class="hero__grid">
+          <div class="hero__main">
+            <h1 class="hero__name reveal reveal--delay-1">
+              <span>JOÃO</span>
+              <span class="accent">MATANA</span>
+            </h1>
+
+            <div class="hero__class reveal reveal--delay-2">
+              <span class="label">CLASS</span>
+              <span class="arrow">▸</span>
+              <span class="value">full_stack_engineer</span>
+              <span class="label">·</span>
+              <span class="label">GUILD</span>
+              <span class="arrow">▸</span>
+              <span class="guild">CLINICORP_SOLUTIONS</span>
+            </div>
+
+            <p class="hero__bio reveal reveal--delay-3">
+              Carreira marcada por um <em>perfil híbrido</em> &mdash; dev de software que entende profundamente de dados. 5+ anos no jogo, atualmente comandando o sistema que gerencia <em>assinaturas e faturamento</em> da empresa. Formação em Eng. de Software e Ciência de Dados, com pós em Eng. de Dados, BI e Big Data.
+            </p>
+
+            <div class="hero__cta reveal reveal--delay-4">
+              <a class="btn btn--primary" href="../assets/pdf/CV.pdf" download="CV_JoaoMatana" target="_blank" rel="noopener">
+                <span>↓</span> download_cv.pdf
+              </a>
+              <a class="btn" href="#quests">
+                <span class="arrow">▸</span> view_quests
+              </a>
+              <a class="btn" href="#contato">
+                <span class="arrow">▸</span> open_dialog
+              </a>
+            </div>
+          </div>
+
+          <aside class="player-card reveal reveal--delay-2">
+            <div class="portrait">
+              <span class="corners" aria-hidden="true">
+                <span></span><span></span><span></span><span></span>
+              </span>
+              <span class="badge"><span class="led"></span>online</span>
+              <img src="../assets/img/person.jpg" alt="Avatar de João Matana" loading="lazy">
+            </div>
+
+            <div class="panel">
+              <div class="panel--header">
+                <span class="dot" aria-hidden="true"></span>
+                <span>character_stats</span>
+              </div>
+              <div class="stats">
+                <div class="stats__row">
+                  <span class="stats__label">INT</span>
+                  <span class="stats__bar reveal" data-fill="92"></span>
+                  <span class="stats__value">92</span>
+                </div>
+                <div class="stats__row">
+                  <span class="stats__label">DEX</span>
+                  <span class="stats__bar reveal" data-fill="87"></span>
+                  <span class="stats__value">87</span>
+                </div>
+                <div class="stats__row">
+                  <span class="stats__label">FOC</span>
+                  <span class="stats__bar reveal is-pink" data-fill="80"></span>
+                  <span class="stats__value">80</span>
+                </div>
+                <div class="stats__row">
+                  <span class="stats__label">LCK</span>
+                  <span class="stats__bar reveal is-amber" data-fill="65"></span>
+                  <span class="stats__value">65</span>
+                </div>
+                <div class="stats__row">
+                  <span class="stats__label">XP</span>
+                  <span class="stats__bar reveal is-violet" data-fill="78"></span>
+                  <span class="stats__value">5y</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <div class="panel--header">
+                <span class="dot" aria-hidden="true"></span>
+                <span>equipped_stack</span>
+              </div>
+              <div class="inventory">
+                <span class="item">node.js</span>
+                <span class="item">react</span>
+                <span class="item">typescript</span>
+                <span class="item">sql</span>
+                <span class="item">bigquery</span>
+                <span class="item">gcp</span>
+                <span class="item">terraform</span>
+                <span class="item">python</span>
+                <span class="item">pub/sub</span>
+                <span class="item">jest</span>
+                <span class="item">tailwind</span>
+                <span class="item">shadcn/ui</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================ ABOUT (PLAYER METADATA) ================ -->
+    <section id="sobre" class="section">
+      <div class="wrapper">
+        <header class="section__head">
+          <div>
+            <span class="eyebrow reveal">// 01 — player_metadata <span class="dim">$</span> cat about.json</span>
+            <h2 class="section__title reveal reveal--delay-1">
+              <span class="accent">&gt;</span> SOBRE
+            </h2>
+          </div>
+          <div class="section__meta reveal reveal--delay-1">
+            uptime <strong>5y</strong> · region <strong>BR-SC</strong>
+          </div>
+        </header>
+
+        <div class="panel reveal">
+          <div class="panel--header">
+            <span class="dot" aria-hidden="true"></span>
+            <span>./character_info.sh</span>
+          </div>
+
+          <dl class="stats" style="grid-template-columns: 1fr;">
+            <div class="stats__row" style="grid-template-columns: 110px 1fr;">
+              <span class="stats__label">name</span>
+              <span style="color: var(--text)">João Pedro Matana</span>
+            </div>
+            <div class="stats__row" style="grid-template-columns: 110px 1fr;">
+              <span class="stats__label">class</span>
+              <span style="color: var(--c-cyan)">full_stack_engineer</span>
+            </div>
+            <div class="stats__row" style="grid-template-columns: 110px 1fr;">
+              <span class="stats__label">level</span>
+              <span style="color: var(--text)">25</span>
+            </div>
+            <div class="stats__row" style="grid-template-columns: 110px 1fr;">
+              <span class="stats__label">origin</span>
+              <span style="color: var(--text)">Concórdia, SC</span>
+            </div>
+            <div class="stats__row" style="grid-template-columns: 110px 1fr;">
+              <span class="stats__label">based_in</span>
+              <span style="color: var(--text)">Jaraguá do Sul, SC</span>
+            </div>
+            <div class="stats__row" style="grid-template-columns: 110px 1fr;">
+              <span class="stats__label">guild</span>
+              <span style="color: var(--c-pink)">Clinicorp Solutions</span>
+            </div>
+            <div class="stats__row" style="grid-template-columns: 110px 1fr;">
+              <span class="stats__label">specialty</span>
+              <span style="color: var(--text)">billing engine · subscriptions · EDA · data infra</span>
+            </div>
+            <div class="stats__row" style="grid-template-columns: 110px 1fr;">
+              <span class="stats__label">academia</span>
+              <span style="color: var(--text)">Eng. de Software · Ciência de Dados · pós em Eng. de Dados · BI/Big Data</span>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ QUEST LOG (Experiências) ================ -->
+    <section id="quests" class="section">
+      <div class="wrapper">
+        <header class="section__head">
+          <div>
+            <span class="eyebrow reveal">// 02 — quest_log <span class="dim">$</span> ./show --completed --active</span>
+            <h2 class="section__title reveal reveal--delay-1">
+              <span class="accent">&gt;</span> QUEST_LOG
+            </h2>
+          </div>
+          <div class="section__meta reveal reveal--delay-1">
+            quests <strong>5</strong> · 1 <span class="pink" style="color: var(--c-pink)">active</span> · 4 cleared
+          </div>
+        </header>
+
+        <div class="quest-log">
+
+          <article class="quest quest--active reveal">
+            <aside class="quest__sidebar">
+              <span class="quest__status is-active"><span class="led"></span>active</span>
+              <div class="quest__period">
+                <div class="from"><span class="label">since</span><span>12/2025</span></div>
+                <div class="to"><span class="label">until</span><span>—</span></div>
+              </div>
+              <div class="quest__xp">xp earned <strong>+ongoing</strong></div>
+            </aside>
+            <div class="quest__body">
+              <div class="quest__company">Clinicorp Solutions · Enterprise Application</div>
+              <h3 class="quest__title">Desenvolvedor Full Stack</h3>
+              <ul class="quest__objectives">
+                <li>Responsável técnico pela plataforma core de gestão de assinaturas e faturamento, atuando na orquestração do ciclo de vida comercial e integração da stack financeira.</li>
+                <li>Engenharia do motor de billing recorrente e avulso — cálculos de mensalidades, múltiplos métodos de pagamento (PIX, boleto, cartão) e conciliação de faturas.</li>
+                <li>Manutenção end-to-end do sistema de assinaturas: planos, upgrades/downgrades, ativação de módulos e regras complexas para grupos e afiliados.</li>
+                <li>Integrações financeiras — quatro gateways (PagSeguro, Pagar.me, IUGU, BS2) e plataformas como HubSpot, Omie e Jira via adapters próprios.</li>
+                <li>Modernização de arquitetura e frontend — migração de componentes legados para um design system baseado em shadcn/ui, Radix e Tailwind.</li>
+                <li>Definição de padrões técnicos e code review entre os novos módulos e sistemas legados.</li>
+                <li>Operação de infraestrutura em GCP — App Engine, Cloud SQL e Cloud Tasks com provisionamento via Terraform.</li>
+                <li>Confiabilidade e observabilidade — refatorações test-first (Jest) e instrumentação de métricas via Grafana.</li>
+              </ul>
+              <div class="quest__loot">
+                <span class="label">loot</span>
+                <span class="inventory" style="margin: 0;">
+                  <span class="item">node.js</span>
+                  <span class="item">react</span>
+                  <span class="item">PostgreSQL</span>
+                  <span class="item">BigQuery</span>
+                  <span class="item">GCP</span>
+                  <span class="item">tailwind</span>
+                  <span class="item">shadcn/ui</span>
+                  <span class="item">jest</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="quest reveal">
+            <aside class="quest__sidebar">
+              <span class="quest__status"><span class="led"></span>cleared</span>
+              <div class="quest__period">
+                <div class="from"><span class="label">from</span><span>10/2025</span></div>
+                <div class="to"><span class="label">to</span><span>12/2025</span></div>
+              </div>
+              <div class="quest__xp">duration <strong>2 mo</strong></div>
+            </aside>
+            <div class="quest__body">
+              <div class="quest__company">Clinicorp Solutions</div>
+              <h3 class="quest__title">Engenheiro de Dados</h3>
+              <ul class="quest__objectives">
+                <li>Engenheiro responsável pela execução técnica e definição da arquitetura inicial da nova área de dados da empresa.</li>
+                <li>Desenvolvimento das primeiras pipelines de dados e implementação de padrões de codificação e fluxos de ETL/ELT para o setor.</li>
+                <li>Estruturação da fundação técnica da área, transformando requisitos de negócio em modelos de dados funcionais e governados.</li>
+              </ul>
+              <div class="quest__loot">
+                <span class="label">loot</span>
+                <span class="inventory" style="margin: 0;">
+                  <span class="item">bigquery</span>
+                  <span class="item">etl/elt</span>
+                  <span class="item">data modeling</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="quest reveal">
+            <aside class="quest__sidebar">
+              <span class="quest__status"><span class="led"></span>cleared</span>
+              <div class="quest__period">
+                <div class="from"><span class="label">from</span><span>02/2024</span></div>
+                <div class="to"><span class="label">to</span><span>10/2025</span></div>
+              </div>
+              <div class="quest__xp">duration <strong>1y 8mo</strong></div>
+            </aside>
+            <div class="quest__body">
+              <div class="quest__company">Clinicorp Solutions · Enterprise Application</div>
+              <h3 class="quest__title">Desenvolvedor Full Stack</h3>
+              <ul class="quest__objectives">
+                <li>Atuação full-cycle em projetos na equipe de Enterprise Application (EA), gerenciando o desenvolvimento end-to-end &mdash; do levantamento de requisitos até a entrega.</li>
+                <li>Arquitetura orientada a eventos (EDA) utilizando Pub/Sub para processar eventos do ciclo de vida dos assinantes.</li>
+                <li>Criação de ferramentas internas estratégicas: "SQL Studio" para consultas ad-hoc e sistema de gerenciamento de IDs de teste para QA.</li>
+                <li>Gerenciamento técnico e manutenção evolutiva dos sistemas financeiros internos.</li>
+              </ul>
+              <div class="quest__loot">
+                <span class="label">loot</span>
+                <span class="inventory" style="margin: 0;">
+                  <span class="item">node.js</span>
+                  <span class="item">react</span>
+                  <span class="item">PostgreSQL</span>
+                  <span class="item">BigQuery</span>
+                  <span class="item">GCP</span>
+                  <span class="item">Pub/Sub</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="quest reveal">
+            <aside class="quest__sidebar">
+              <span class="quest__status"><span class="led"></span>cleared</span>
+              <div class="quest__period">
+                <div class="from"><span class="label">from</span><span>05/2023</span></div>
+                <div class="to"><span class="label">to</span><span>02/2024</span></div>
+              </div>
+              <div class="quest__xp">duration <strong>9 mo</strong></div>
+            </aside>
+            <div class="quest__body">
+              <div class="quest__company">Clinicorp Solutions</div>
+              <h3 class="quest__title">Analista de Dados</h3>
+              <ul class="quest__objectives">
+                <li>Desenvolvimento de dashboards e relatórios interativos no Looker.</li>
+                <li>Elaboração de consultas SQL no BigQuery para análise de dados.</li>
+                <li>Documentação da estrutura do banco de dados — modelagem, dicionário de dados e definição de relacionamentos.</li>
+              </ul>
+              <div class="quest__loot">
+                <span class="label">loot</span>
+                <span class="inventory" style="margin: 0;">
+                  <span class="item">bigquery</span>
+                  <span class="item">looker</span>
+                  <span class="item">sql</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="quest reveal">
+            <aside class="quest__sidebar">
+              <span class="quest__status"><span class="led"></span>cleared</span>
+              <div class="quest__period">
+                <div class="from"><span class="label">from</span><span>04/2021</span></div>
+                <div class="to"><span class="label">to</span><span>05/2023</span></div>
+              </div>
+              <div class="quest__xp">duration <strong>2y 1mo</strong></div>
+            </aside>
+            <div class="quest__body">
+              <div class="quest__company">BOLD</div>
+              <h3 class="quest__title">Analista de Desenvolvimento de Sistemas</h3>
+              <ul class="quest__objectives">
+                <li>Gerenciamento da plataforma de BI QlikView — ETL, dashboards e relatórios gerenciais.</li>
+                <li>Desenvolvimento e manutenção de middlewares para integração de sistemas (ERP, WMS, Salesforce CRM &amp; Ecommerce).</li>
+                <li>Scripts e sistemas internos em Python para automação de tarefas e processos.</li>
+                <li>Projetos estratégicos de implantação de RPA para otimização de processos financeiros.</li>
+                <li>Implantação das plataformas Salesforce (CRM e Ecommerce) e administração do sistema de RH (Senior X).</li>
+              </ul>
+              <div class="quest__loot">
+                <span class="label">loot</span>
+                <span class="inventory" style="margin: 0;">
+                  <span class="item">python</span>
+                  <span class="item">qlikview</span>
+                  <span class="item">sql</span>
+                  <span class="item">rpa</span>
+                  <span class="item">salesforce</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ SKILL TREE (Educação) ================ -->
+    <section id="formacao" class="section">
+      <div class="wrapper">
+        <header class="section__head">
+          <div>
+            <span class="eyebrow reveal">// 03 — skill_tree <span class="dim">$</span> ./show --unlocked</span>
+            <h2 class="section__title reveal reveal--delay-1">
+              <span class="accent">&gt;</span> SKILL_TREE
+            </h2>
+          </div>
+          <div class="section__meta reveal reveal--delay-1">
+            nodes <strong>4</strong> · all unlocked
+          </div>
+        </header>
+
+        <div class="skill-tree">
+
+          <article class="skill reveal">
+            <div class="skill__icon">[ ⌘ ]</div>
+            <div class="skill__period">01/2020 — 09/2024</div>
+            <h3 class="skill__title">Bacharelado em Engenharia de Software</h3>
+            <div class="skill__inst">Cruzeiro do Sul Virtual</div>
+            <div class="skill__status">unlocked</div>
+          </article>
+
+          <article class="skill reveal reveal--delay-1">
+            <div class="skill__icon">[ ⚙ ]</div>
+            <div class="skill__period">07/2023 — 01/2024</div>
+            <h3 class="skill__title">Pós-Graduação em Engenharia de Dados</h3>
+            <div class="skill__inst">Anhanguera Educacional</div>
+            <div class="skill__status">unlocked</div>
+          </article>
+
+          <article class="skill reveal reveal--delay-2">
+            <div class="skill__icon">[ ◇ ]</div>
+            <div class="skill__period">09/2023 — 01/2024</div>
+            <h3 class="skill__title">Pós em Business Intelligence, Big Data &amp; Analytics</h3>
+            <div class="skill__inst">Anhanguera Educacional</div>
+            <div class="skill__status">unlocked</div>
+          </article>
+
+          <article class="skill reveal reveal--delay-3">
+            <div class="skill__icon">[ ⬢ ]</div>
+            <div class="skill__period">09/2021 — 06/2023</div>
+            <h3 class="skill__title">Tecnólogo em Ciência de Dados</h3>
+            <div class="skill__inst">UNINTER · Centro Universitário Internacional</div>
+            <div class="skill__status">unlocked</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================ ACHIEVEMENTS (Selected Work) ================ -->
+    <section id="achievements" class="section">
+      <div class="wrapper">
+        <header class="section__head">
+          <div>
+            <span class="eyebrow reveal">// 04 — achievements <span class="dim">$</span> ./show --unlocked --rare-only</span>
+            <h2 class="section__title reveal reveal--delay-1">
+              <span class="accent">&gt;</span> ACHIEVEMENTS
+            </h2>
+          </div>
+          <div class="section__meta reveal reveal--delay-1">
+            unlocked <strong>3 / 3</strong>
+          </div>
+        </header>
+
+        <div class="achievements">
+
+          <article class="achievement reveal">
+            <div class="achievement__head">
+              <span class="achievement__num">01</span>
+              <span class="achievement__rarity">legendary</span>
+            </div>
+            <h3 class="achievement__title">Motor de Billing &amp; Assinaturas</h3>
+            <p class="achievement__desc">
+              Plataforma core de billing recorrente e avulso — PIX, boleto e cartão.
+              Ciclo de vida completo de assinatura (planos, upgrades, módulos, afiliados)
+              integrado a quatro gateways de pagamento.
+            </p>
+            <div class="achievement__stack">
+              <span class="item">node.js</span>
+              <span class="item">gcp</span>
+              <span class="item">terraform</span>
+              <span class="item">jest</span>
+            </div>
+          </article>
+
+          <article class="achievement reveal reveal--delay-1">
+            <div class="achievement__head">
+              <span class="achievement__num">02</span>
+              <span class="achievement__rarity epic">epic</span>
+            </div>
+            <h3 class="achievement__title">Arquitetura Orientada a Eventos</h3>
+            <p class="achievement__desc">
+              Pub/Sub processando o ciclo de vida do assinante na Clinicorp.
+              Adapters próprios conectando HubSpot, Omie e Jira ao core financeiro
+              — escala e observabilidade ponta a ponta.
+            </p>
+            <div class="achievement__stack">
+              <span class="item">pub/sub</span>
+              <span class="item">gcp</span>
+              <span class="item">eda</span>
+            </div>
+          </article>
+
+          <article class="achievement reveal reveal--delay-2">
+            <div class="achievement__head">
+              <span class="achievement__num">03</span>
+              <span class="achievement__rarity rare">rare</span>
+            </div>
+            <h3 class="achievement__title">SQL Studio &amp; Test ID Manager</h3>
+            <p class="achievement__desc">
+              Tooling estratégico para times de produto e dados — SQL Studio
+              para consultas ad-hoc no BigQuery e um gerenciador de IDs de teste
+              que destravou os fluxos de QA.
+            </p>
+            <div class="achievement__stack">
+              <span class="item">react</span>
+              <span class="item">node.js</span>
+              <span class="item">bigquery</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================ FOOTER / MAIN MENU ================ -->
+  <footer id="contato" class="footer">
+    <div class="wrapper">
+
+      <div class="footer__intro">
+        <span class="eyebrow reveal">// system_dialog</span>
+        <h2 class="footer__title reveal reveal--delay-1">
+          PRESS <span class="accent">START</span><span class="blink"></span>
+        </h2>
+        <div class="footer__sub reveal reveal--delay-2">
+          ready when you are — open dialog to begin
+        </div>
+      </div>
+
+      <nav class="menu-grid" aria-label="Contact options">
+        <a class="menu-item reveal" href="mailto:jpmatana19@gmail.com">
+          <div class="menu-item__label">[01] dialog · email</div>
+          <div class="menu-item__value">jpmatana19@gmail.com</div>
+        </a>
+        <a class="menu-item reveal reveal--delay-1" href="tel:+5547997130692">
+          <div class="menu-item__label">[02] dialog · phone</div>
+          <div class="menu-item__value">+55 (47) 9 9713-0692</div>
+        </a>
+        <a class="menu-item reveal reveal--delay-2" href="https://www.linkedin.com/in/joao-matana/" target="_blank" rel="noopener">
+          <div class="menu-item__label">[03] join_party · linkedin</div>
+          <div class="menu-item__value">/in/joao-matana ↗</div>
+        </a>
+        <a class="menu-item reveal reveal--delay-3" href="https://www.instagram.com/joao_matana/" target="_blank" rel="noopener">
+          <div class="menu-item__label">[04] guild · instagram</div>
+          <div class="menu-item__value">@joao_matana ↗</div>
+        </a>
+      </nav>
+
+      <div class="footer__bottom">
+        <span>© <span data-year>2025</span> · joao_matana.exe</span>
+        <span>region <strong style="color: var(--c-cyan)">BR-SC</strong> · Jaraguá do Sul</span>
+        <span class="version">v2.5.0 · build_<span data-iso></span></span>
       </div>
     </div>
-    <div class="set-menu">
-      <p>Escolha a Cor</p>
-      <div class="color-bar" data-toggle="selected">
-        <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
-        <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
-        <span class="color-item bg-theme-green" data-class="theme-green"></span>
-        <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
-        <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
-      </div>
-      <select class="custom-select d-block my-2" id="change-page">
-        <option value="">Escolha o modelo</option>
-        <option value="index">Modelo 1</option>
-        <option value="index-2">Modelo 2</option>
-      </select>
-    </div>
-  </div> <!-- Fim Botão de Configuração -->
+  </footer>
 
-  <div class="vg-page page-home" id="home" style="background-image: url(../assets/img/bg_image_1.jpg)">
-
-    <!-- Barra de navegação -->
-    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
-      <div class="container">
-        <a href="" class="navbar-brand">J P M</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
-          <span class="ti-menu"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main-navbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a href="#home" class="nav-link" data-animate="scrolling">Início</a>
-            </li>
-            <li class="nav-item">
-              <a href="#about" class="nav-link" data-animate="scrolling">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a href="#contact" class="nav-link" data-animate="scrolling">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div> <!-- Fim Barra de navegação -->
-
-    <!-- Inicio -->
-    <div class="caption-header text-center wow zoomInDown">
-      <h5 class="fw-normal">Bem-Vindo(a)</h5>
-      <h1 class="fw-light mb-4">Eu sou <b class="fg-theme">João</b> Matana</h1>
-      <div class="badge">Desenvolvedor Full Stack</div>
-    </div> <!-- Fim Inicio -->
-    <div class="floating-button"><span class="ti-mouse"></span></div>
-  </div>
-  
-  <!-- Sobre -->
-  <div class="vg-page page-about" id="about">
-    
-    <!-- Perfil -->
-    <div class="container py-5">
-      <div class="row">
-        <div class="col-lg-4 py-3">
-          <div class="img-place wow fadeInUp">
-            <img src="../assets/img/person.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
-          <h1 class="fw-light">João Matana</h1>
-          <h5 class="fg-theme mb-3">Desenvolvedor Full Stack</h5>
-          <p class="text-muted">Minha carreira é marcada por um perfil híbrido: desenvolvedor de software que entende profundamente de dados.
-            Com mais de 5 anos de experiência, já atuei desde a fundação técnica de áreas de dados até o desenvolvimento de ferramentas internas estratégicas.
-            Atualmente, trabalho à frente do sistema que gerencia as assinaturas e o faturamento da empresa.
-            Sou formado em Engenharia de Software e Ciência de Dados, com pós-graduações em Engenharia de Dados, BI e Big Data.
-          </p>
-          <ul class="theme-list">
-            <li><b>De:</b> Concórdia, SC</li>
-            <li><b>Mora em:</b> Jaraguá do Sul, SC</li>
-            <li><b>Idade:</b> 25</li>
-            <li><b>Gênero:</b> Masculino</li>
-          </ul>
-          <a href="../assets/pdf/CV.pdf" download="CV_JoaoMatana" target="_blank"><button class="btn btn-theme-outline">Download CV</button></a>
-        </div>
-      </div>
-    </div> <!-- Fim Perfil -->
-
-    <div class="container pt-5">
-      <div class="row">
-        <div class="col-md-6 wow fadeInRight">
-
-          <!-- Educação -->
-          <h2 class="fw-normal">Educação</h2>
-          <ul class="timeline mt-4 pr-md-5">
-            <li>
-              <div class="title">01/2020 - 09/2024</div>
-              <div class="details">
-                <h5>Bacharel em Engenharia de Software</h5>
-                <small class="fg-theme">Cruzeiro do Sul Virtual</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">07/2023 - 01/2024</div>
-              <div class="details">
-                <h5>Pós-Graduação em Engenharia de dados</h5>
-                <small class="fg-theme">Anhanguera Educacional</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">09/2023 - 01/2024</div>
-              <div class="details">
-                <h5>Pós-Graduação em Business intelligence, Big Data e Analytics</h5>
-                <small class="fg-theme">Anhanguera Educacional</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">09/2021 - 06/2023</div>
-              <div class="details">
-                <h5>Tecnólogo em Ciência de Dados</h5>
-                <small class="fg-theme">UNINTER Centro Universitário Internacional</small>
-              </div>
-            </li>
-          </ul> <!-- Fim Educação -->
-          
-          <!-- Experiências -->
-          <h2 class="fw-normal">Experiências</h2>
-          <ul class="timeline mt-4 pr-md-5">
-            <li>
-              <div class="title">12/2025 - Atual</div>
-              <div class="details">
-                <h5>Desenvolvedor Full Stack (Enterprise Application)</h5>
-                <small class="fg-theme">Clinicorp Solutions</small>
-                <p>
-                  - Responsável técnico pela plataforma core de gestão de assinaturas e faturamento, atuando na orquestração do ciclo de vida comercial e integração da stack financeira.
-                </p>
-                <p>
-                  - Desenvolvimento e engenharia do motor de billing recorrente e avulso, abrangendo cálculos de mensalidades, múltiplos métodos de pagamento (PIX, boleto, cartão) e conciliação de faturas.
-                </p>
-                <p>
-                  - Manutenção end-to-end do sistema de assinaturas, incluindo gestão de planos, upgrades/downgrades, ativação de módulos e regras complexas para grupos e afiliados.
-                </p>
-                <p>
-                  - Implementação de integrações financeiras e externas, conectando gateways de pagamento (PagSeguro, Pagar.me, IUGU, BS2) e plataformas como HubSpot, Omie e Jira via adapters próprios.
-                </p>
-                <p>
-                  - Modernização de arquitetura e frontend, executando a migração de componentes legados para um design system baseado em shadcn/ui, Radix e Tailwind.
-                </p>
-                <p>
-                  - Definição de padrões técnicos e code review, garantindo a consistência e qualidade do código entre os novos módulos e sistemas legados.
-                </p>
-                <p>
-                  - Operação de infraestrutura em GCP, utilizando App Engine, Cloud SQL e Cloud Tasks com provisionamento via Terraform.
-                </p>
-                <p>
-                  - Garantia de confiabilidade e observabilidade, conduzindo refatorações críticas com abordagem test-first (Jest) e instrumentação de métricas via Grafana.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="title">10/2025 - 12/2025</div>
-              <div class="details">
-                <h5>Engenheiro de Dados</h5>
-                <small class="fg-theme">Clinicorp Solutions</small>
-                <p>
-                  - Atuação como engenheiro responsável pela execução técnica e definição da arquitetura inicial da nova área de dados da empresa.
-                </p>
-                <p>
-                  - Desenvolvimento das primeiras pipelines de dados e implementação de padrões de codificação e fluxos de ETL/ELT para o setor.
-                </p>
-                <p>
-                  - Colaboração direta na estruturação da fundação técnica da área, transformando requisitos de negócio em modelos de dados funcionais e governados.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="title">02/2024 - 10/2025</div>
-              <div class="details">
-                <h5>Desenvolvedor Full Stack (Enterprise Application)</h5>
-                <small class="fg-theme">Clinicorp Solutions</small>
-                <p>
-                  - Atuação full-cycle em projetos na equipe de Enterprise Application (EA), gerenciando o desenvolvimento end-to-end: desde o levantamento de requisitos com stakeholders, design de UI, definição de arquitetura, até a implementação e entrega.
-                </p>
-                <p>
-                  - Desenvolvimento e implementação de uma arquitetura orientada a eventos (EDA) utilizando Pub/Sub para processar eventos do ciclo de vida dos assinantes.
-                </p>
-                <p>
-                  - Criação de ferramentas internas estratégicas para otimização de processos, incluindo um "SQL Studio" para consultas ad-hoc e um sistema de gerenciamento de IDs de teste para QA.
-                </p>
-                <p>
-                  - Gerenciamento técnico e manutenção evolutiva dos sistemas financeiros internos.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="title">05/2023 - 02/2024</div>
-              <div class="details">
-                <h5>Analista de dados</h5>
-                <small class="fg-theme">Clinicorp Solutions</small>
-                <p>
-                  - Desenvolvimento de dashboards e relatórios interativos no Looker.
-                </p>
-                <p>
-                  - Elaboração de consultas SQL no BigQuery para análise de dados.
-                </p>
-                <p>
-                  - Responsável pela documentação da estrutura do banco de dados, incluindo modelagem, dicionário de dados e definição de relacionamentos.
-                </p>
-                <p>
-                  - Principais Tecnologias: BigQuery, Looker, SQL.
-                </p>
-              </div>
-            </li>
-            <li>
-              <div class="title">04/2021 - 05/2023</div>
-              <div class="details">
-                <h5>Analista de Desenvolvimento de Sistemas</h5>
-                <small class="fg-theme">BOLD</small>
-                <p>
-                  - Gerenciamento da plataforma de BI QlikView, incluindo o desenvolvimento de processos de ETL, construção de dashboards e relatórios gerenciais.
-                </p>
-                <p>
-                  - Desenvolvimento e manutenção de middlewares para integração de sistemas (ERP, WMS, Salesforce CRM & Ecommerce).
-                </p>
-                <p>
-                  - Desenvolvimento de scripts e sistemas internos em Python para automação de tarefas e processos.
-                </p>
-                <p>
-                  - Participação em projetos estratégicos de implantação de RPA para otimização de processos financeiros.
-                </p>
-                <p>
-                  - Atuação no projeto de implantação das plataformas Salesforce (CRM e Ecommerce) e administração do sistema de RH (Senior X).
-                </p>
-                <p>
-                  - Principais Tecnologias: Python, QlikView, SQL, RPA, Salesforce.
-                </p>
-              </div>
-            </li>
-          </ul> <!-- Fim Experiências -->
-        </div>
-
-        <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
-
-          <!-- Cursos e Qualificações -->
-          <h2 class="fw-normal">Cursos e Qualificações</h2>
-          <ul class="timeline mt-4 pr-md-5">
-            <li>
-              <div class="title">Em andamento</div>
-              <div class="details">
-                <h5>Formação Node.js</h5>
-                <small class="fg-theme">UDEMY</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">Em andamento</div>
-              <div class="details">
-                <h5>Desenvolvimento Web</h5>
-                <small class="fg-theme">UDEMY</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">Em andamento</div>
-              <div class="details">
-                <h5>Python Avançado</h5>
-                <small class="fg-theme">UDEMY</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">11/2023</div>
-              <div class="details">
-                <h5>Banco de Dados Relacionais e SQL</h5>
-                <small class="fg-theme">UDEMY</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">03/2022</div>
-              <div class="details">
-                <h5>Git - Básico ao Avançado</h5>
-                <small class="fg-theme">UDEMY</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">02/2022</div>
-              <div class="details">
-                <h5>Git e Github</h5>
-                <small class="fg-theme">UDEMY</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">09/2021</div>
-              <div class="details">
-                <h5>Rest com NodeJS, API com Express e MySQL</h5>
-                <small class="fg-theme">ALURA</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">08/2021</div>
-              <div class="details">
-                <h5>Power BI, Do Básico ao Avançado</h5>
-                <small class="fg-theme">UDEMY</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">05/2021</div>
-              <div class="details">
-                <h5>Power BI para todos</h5>
-                <small class="fg-theme">UDEMY</small>
-              </div>
-            </li>
-            <li>
-              <div class="title">04/2021</div>
-              <div class="details">
-                <h5>Terminal Linux</h5>
-                <small class="fg-theme">UDEMY</small>
-              </div>
-            </li>
-          </ul>
-        </div> <!-- Fim Cursos e Qualificações -->
-      </div>
-   </div>
-  </div> <!-- Fim Sobre -->
-
-  <!-- Serviços -->
-  <div class="vg-page page-service">
-    <div class="container">
-      <div class="text-center wow fadeInUp">
-        <div class="badge badge-subhead">Serviços</div>
-      </div>
-      <h1 class="fw-normal text-center wow fadeInUp">O que eu posso fazer?</h1>
-      <div class="row mt-5">
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-pie-chart"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Dados</h4>
-              <p>Coleta, gerenciamento, interpretação e transformação de dados, para melhor análise do usuário final.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-search"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Análise de Sistemas</h4>
-              <p>Analise, documentação, projetos, implementação, testes e gerenciamento de sistemas.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-shortcode"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Desenvolvimento em Python</h4>
-              <p>Data Science, Machine Learning, Desenvolvimento Web e Desenvolvimento de Apps.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 col-xl-3">
-          <div class="card card-service wow fadeInUp">
-            <div class="icon">
-              <span class="ti-desktop"></span>
-            </div>
-            <div class="caption">
-              <h4 class="fg-theme">Desenvolvimento Web</h4>
-              <p>Como por exemplo, esse protifólio que você está vendo agora, com HTML, CSS, JS e Frameworks.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> <!-- Fim Serviços -->
-  
-  <!-- Contato
-  <div class="vg-page page-contact" id="contact">
-    <div class="container-fluid">
-      <div class="text-center wow fadeInUp">
-        <div class="badge badge-subhead">Contato</div>
-      </div>
-      <h1 class="text-center fw-normal wow fadeInUp">Entre em contato</h1>
-          <form class="vg-contact-form">
-            <div class="form-row">
-              <div class="col-12 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Name" placeholder="Nome">
-              </div>
-              <div class="col-6 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Email" placeholder="E-mail">
-              </div>
-              <div class="col-6 mt-3 wow fadeInUp">
-                <input class="form-control" type="text" name="Subject" placeholder="Assunto">
-              </div>
-              <div class="col-12 mt-3 wow fadeInUp">
-                <textarea class="form-control" name="Message" rows="6" placeholder="Digite a mensagem aqui.."></textarea>
-              </div>
-              <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1">Enviar mensagem</button>
-            </div>
-          </form>
-    </div>
-  </div> Fim Contato -->
-  
-  <!-- Rodapé -->
-  <div class="vg-footer">
-    <h1 class="text-center">CV Virtual - João Matana</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 py-3">
-          <div class="footer-info">
-            <p>Resido em</p>
-            <hr class="divider">
-            <p class="fs-large fg-white">Jaraguá do Sul - SC</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 py-3">
-          <div class="float-lg-right">
-            <p>Minhas Redes Sociais</p>
-            <hr class="divider">
-            <ul class="list-unstyled">
-              <li><span class="ti-instagram"></span> <a href="https://www.instagram.com/jp_matana/" target="_blank">Instagram</a></li>
-              <li><span class="ti-linkedin"></span> <a href="https://www.linkedin.com/in/joao-matana/" target="_blank">Linkedin</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 py-3">
-          <div class="float-lg-right">
-            <p>Entre em contato</p>
-            <hr class="divider">
-            <ul class="list-unstyled">
-              <li>jpmatana19@gmail.com</li>
-              <li>+55 (47)9 9713-0692</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> <!-- Fim Rodapé -->
-  
-  
-  <script src="../assets/js/jquery-3.5.1.min.js"></script>
-    
-  <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    
-  <script src="../assets/vendor/owl-carousel/owl.carousel.min.js"></script>
-    
-  <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
-    
-  <script src="../assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
-    
-  <script src="../assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
-
-  <script src="../assets/vendor/wow/wow.min.js"></script>
-
-  <script src="../assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
-
-  <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-    
-  <script src="../assets/js/topbar-virtual.js"></script>
-  
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>
