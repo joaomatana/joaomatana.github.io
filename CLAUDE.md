@@ -75,15 +75,18 @@ Fonts are loaded via Google Fonts (single `<link>` in `<head>`). The page backgr
 - Downloadable CV: `assets/pdf/CV.pdf` (linked from the "Download CV" link — replace this file to update the downloadable version)
 - Favicon: `assets/favicon.ico`
 
-### Legacy files (unreferenced)
+### Repo footprint
 
-The previous MACode template files are still on disk but **no longer referenced** by the new page. If you're cleaning up the repo, the following can all be deleted safely:
+After the editorial→HUD redesign and Pass 2 cleanup, the live tree is intentionally tiny:
 
-- `html/index-2.html` (old minibar variant)
-- `assets/css/bootstrap.css`, `topbar.virtual.css`, `minibar.virtual.css`, `virtual.css`, `themify-icons.css`
-- `assets/js/bootstrap.bundle.min.js`, `jquery-3.5.1.min.js`, `topbar-virtual.js`, `minibar-virtual.js`
-- `assets/vendor/` (entire directory: animate, animateNumber, fancybox, isotope, nice-select, owl-carousel, waypoints, wow)
-- `assets/fonts/` (Themify Icons font files)
-- `assets/img/bg_image_1.jpg`, `bg_image_2.jpg`
+```
+html/index.html
+assets/css/styles.css
+assets/js/main.js
+assets/img/person.jpg
+assets/pdf/CV.pdf
+assets/favicon.ico
+CLAUDE.md
+```
 
-Verify nothing references them before deleting (a `grep` on the new `index.html`, `styles.css`, and `main.js` should return zero matches for each).
+No Bootstrap, no jQuery, no vendor plugins, no Themify icon fonts, no template variants. If you find yourself adding back any of those, reconsider — the design depends on staying lean.
